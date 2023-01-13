@@ -1,0 +1,5 @@
+LOAD test.tbl;
+DUPLICATE ( ) FROM Student WHERE ( class < 2015 );
+DUPLICATE ( ) FROM Student WHERE ( class < 2015 );
+SWAP ( studentID class ) FROM Student WHERE ( class < 2015 );
+SELECT ( KEY class totalCredit ) FROM Student WHERE ( totalCredit > 100 ) ( class < 2015 );
